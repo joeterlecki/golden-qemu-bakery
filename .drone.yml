@@ -3,10 +3,8 @@ type: docker
 name: testing
 
 steps:
-- name: test
+- name: tst
+  image: ubuntu
   commands:
-    - "whoami"
-
-trigger:
-  branch:
-  - getting-started
+  - whoami
+  - pwd

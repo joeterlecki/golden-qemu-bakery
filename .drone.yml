@@ -3,8 +3,10 @@ type: docker
 name: testing
 
 steps:
-- name: backend
-  image: golang
+- name: test
   commands:
-  - go build
-  - go test
+    - "whoami"
+
+trigger:
+  branch:
+  - getting-started
